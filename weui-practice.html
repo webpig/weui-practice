@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://cdn.bootcss.com/weui/1.1.1/style/weui.min.css" rel="stylesheet">
+  <style>
+  @font-face {
+    font-family: 'iconfont';
+    src: url('iconfont.eot');
+    src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+    url('iconfont.woff') format('woff'),
+    url('iconfont.ttf') format('truetype'),
+    url('iconfont.svg#iconfont') format('svg');
+  }
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:20px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+  color: #11B7F3;
+  position: relative;
+}
+.content:after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: .1rem;
+  height: 1.8rem;
+  background-color: #ddd;
+  top: -.15rem;
+  left: 2.5rem;
+}
+.weui-cell__hd {
+  width: 4.2rem;
+}
+.weui-media-box__desc {
+  color: #aaa;
+  margin-top: .5rem;
+  /*text-align: center;*/
+}
+.weui-media-box__desc a {
+  color: #11B7F3;
+}
+.title {
+  width: 5rem;
+  margin-right: 1rem;
+}
+h3 {
+  font-weight: 400;
+}
+.description {
+  color: #aaa;
+  margin: .6rem 0 0 1rem;
+}
+.last {
+  text-align: center;
+  color: #aaa;
+}
+.freeone {
+  color: orange;
+}
+.caaa{
+  color: #aaa;
+  font-size: 14px;
+  margin-left: .4rem;
+}
+.c {
+  color: #aaa;
+}
+.weui-cells_title {
+  margin-top: .5rem;
+  margin-bottom: -.6rem;
+}
+.weui-cells_title span {
+  display: inline-block;
+  width: 4.2rem;
+  text-align: center;
+  margin-right: 1.2rem;
+}
+.weui-btn {
+    background-color: #10AEFF;
+}
+.weui-cell_access {
+  border-top: 1px dashed #aaa;
+}
+ label.recommend {
+  position: relative;
+}
+ div.recommend {
+  height: 0;
+  width: 0;
+  border-top: 1.9rem solid #1AAD19;
+  border-right: 1.9rem solid transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+span.recommend  {
+  color: #fff;
+  font-size: .8rem;
+  position: absolute;
+  top: 0;
+  left: .08rem;
+}
+    body {
+      background-color: #eee;
+    }
+  </style>
+</head>
+<body ontouchstart>
+  <div id="container">
+    <div class="billing">
+      <div class="weui-cells">
+        <div class="weui-cell">
+          <div class="weui-cell__hd">
+            <a href="#"><i class="iconfont content">&#xe66e;</i></a>
+          </div>
+          <div class="weui-cell__bd weui-cell__primary">
+            <h3>账单分期</h3>
+          </div>
+          <div class="weui-cell__ft">
+            <a href="#"><i class="iconfont icon">&#xe636;</i></a>
+          </div>
+        </div>
+      </div>
+      <div class="weui-cells">
+        <div class="weui-cell">
+          <div class="weui-cell__hd title">
+            <h3>分期金额</h3>
+          </div>
+          <div class="weui-cell__bd weui-cell__primary">
+            <p>1901.30</p>
+          </div>
+          <div class="weui-cell_ft">
+            <a href="#"><i class="weui-icon-info"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="weui-media-box weui-media-box_text">
+        <p class="weui-media-box__desc">如有分期优惠券，仅限在优惠券限定金额内使用，<a href="#">查看优惠券</a></p>
+      </div>
+      <div class="weui-cells">
+        <div class="weui-cells_title c">
+          <!-- <div class="weui-cell__bd"> -->
+            <p><span>期数</span>每期应还(元)</p>
+          <!-- </div> -->
+        </div>
+        <div class="weui-cells weui-cells_checkbox">
+          <label class="weui-cell weui-check__label recommend">
+            <div class="weui-cell__hd">
+              <p>3期</p>
+            </div>
+            <div class="weui-cell__bd weui-cell__primary">
+              <p>649.60<span class="caaa">(含每期手续费15.84)</span></p>
+            </div>
+            <div class="weui-cell__ft">
+              <input type="radio" class="weui-check" name="radio1" id="x11">
+              <span class="weui-icon-checked"></span>
+            </div>
+            <div class="recommend"></div>
+            <span class="recommend">荐</span>
+          </label>
+          <a class="weui-cell weui-cell_access">
+            <div class="weui-cell__bd weui-cell__primary">
+              <p class="freeone">免1期手续费</p>
+            </div>
+            <div class="weui-cell__ft">
+              可免15.84元
+            </div>
+          </a>
+          <label class="weui-cell weui-check__label">
+            <div class="weui-cell__hd">
+              <p>6期</p>
+            </div>
+            <div class="weui-cell__bd weui-cell__primary">
+              <p>331.14<span class="caaa">(含每期手续费14.26)</span></p>
+            </div>
+            <div class="weui-cell__ft">
+              <input type="radio" class="weui-check" name="radio1" id="x11">
+              <span class="weui-icon-checked"></span>
+            </div>
+          </label>
+          <label class="weui-cell weui-check__label">
+            <div class="weui-cell__hd">
+              <p>9期</p>
+            </div>
+            <div class="weui-cell__bd weui-cell__primary">
+              <p>224.98<span class="caaa">(含每期手续费13.73)</span></p>
+            </div>
+            <div class="weui-cell__ft">
+              <input type="radio" class="weui-check" name="radio1" id="x11">
+              <span class="weui-icon-checked"></span>
+            </div>
+          </label>
+          <label class="weui-cell weui-check__label">
+            <div class="weui-cell__hd">
+              <p>12期</p>
+            </div>
+            <div class="weui-cell__bd weui-cell__primary">
+              <p>172.38<span class="caaa">(含每期手续费13.94)</span></p>
+            </div>
+            <div class="weui-cell__ft">
+              <input type="radio" class="weui-check" name="radio1" id="x11">
+              <span class="weui-icon-checked"></span>
+            </div>
+          </label>
+        </div>
+      </div>
+      <div class="weui-media-box weui-media-box_text">
+        <p class="weui-media-box__desc">
+          手续费说明<a href="#"><i class="weui-icon-info"></i></a>
+        </p>
+      </div>
+      <div class="weui-btn-area">
+        <button class="weui-btn weui-btn__primary" id="submit_btn">申请分期</button>
+      </div>
+      <p class="last">分期后05月10日还第1期</p>
+    </div>
+  </div>
+</body>
+</html>
